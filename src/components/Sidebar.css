@@ -1,0 +1,65 @@
+/* Боковое меню */
+.sidebar-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 60px;
+  background-color: #white; 
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  transition: width 0.3s ease;
+  z-index: 1004; /* Гарантируем, что меню будет выше */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #E0E0E0;
+}
+
+/* При наведении меню расширяется */
+.sidebar-menu:hover {
+  width: 200px;
+}
+
+/* Элементы меню */
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 16px;
+  color: #333333;
+  gap: 15px;
+  text-decoration: none;
+}
+
+/* Иконки */
+.menu-item i,
+.menu-item svg {
+  font-size: 19px;
+  color: #gray;
+}
+
+/* Текст скрыт по умолчанию */
+.menu-item span {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  overflow: hidden;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.3s ease, visibility 0.3s ease, width 0.3s ease;
+}
+
+/* Показываем текст при наведении */
+.sidebar-menu:hover .menu-item span {
+  opacity: 1;
+  visibility: visible;
+  width: auto;
+}
+
+/* Hover эффект */
+.menu-item:hover {
+  background-color: rgba(255, 107, 129, 0.2);
+  border-radius: 0px;
+}

@@ -1,0 +1,137 @@
+.about-page {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #FAFAFA;
+  color: #333333;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.8;
+}
+
+/* Анимация появления */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.about-header p {
+  font-size: 1.1rem;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.about-section {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 1.5rem;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.feature-item {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #777777;
+  line-height: 1.6;
+}
+
+.about-image {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-image h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 1.5rem;
+}
+
+.about-image p {
+  font-size: 1.2rem;
+  color: #555555;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.about-image img {
+  width: 70%;
+  max-width: 400px;
+}
+
+.pickup-point {
+  background-color: #FF6B81;
+  padding: 3rem;
+  border-radius: 8px;
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.pickup-point h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.pickup-point p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.about-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: rgba(152, 245, 225, 0.2);
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333333;
+  margin-top: 3rem;
+}
